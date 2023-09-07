@@ -1,0 +1,76 @@
+.Card {
+  width: 40%;
+  padding: 30px 20px;
+  overflow: unset;
+  animation-name: scale-animation;
+  animation-duration: 1.3s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  > div {
+    width: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 34px;
+
+    animation-name: scale-animation;
+    animation-duration: 1.3s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+}
+
+form {
+  .mantine-Input-wrapper {
+    margin-bottom: 0;
+  }
+
+  .mantine-InputWrapper-error {
+    position: absolute;
+    top: 38px;
+  }
+}
+
+.SendButton {
+  margin-top: 10px;
+  width: 50%;
+  animation-name: scale-animation;
+  animation-duration: 1.3s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@media only screen and (max-width: 800px) {
+  .Card {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Card {
+    width: 100%;
+  }
+
+  .SendButton {
+    width: 100%;
+  }
+}
+
+@keyframes scale-animation {
+  from {
+    transform: scaleX(0.5);
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleX(1);
+    transform: scaleY(1);
+  }
+}
